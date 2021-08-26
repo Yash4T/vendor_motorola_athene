@@ -403,11 +403,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/vendor/lib/libmmcamera_ubifocus_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ubifocus_lib.so \
     vendor/motorola/athene/proprietary/vendor/lib/libmmcamera_vpu_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_vpu_module.so \
     vendor/motorola/athene/proprietary/vendor/lib/libmmcamera_vstab_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_vstab_module.so \
-    vendor/motorola/athene/proprietary/lib/motorola.hardware.camera.device@1.0.so:system/lib/motorola.hardware.camera.device@1.0.so \
-    vendor/motorola/athene/proprietary/lib/motorola.hardware.camera.provider@2.4.so:system/lib/motorola.hardware.camera.provider@2.4.so \
-    vendor/motorola/athene/proprietary/vendor/bin/hw/motorola.hardware.camera.provider@2.4-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motorola.hardware.camera.provider@2.4-service \
-    vendor/motorola/athene/proprietary/vendor/etc/init/motorola.hardware.camera.provider@2.4-service_delayed.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.camera.provider@2.4-service_delayed.rc \
-    vendor/motorola/athene/proprietary/vendor/lib/hw/motorola.hardware.camera.provider@2.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/motorola.hardware.camera.provider@2.4-impl.so \
     vendor/motorola/athene/proprietary/vendor/lib/libchromatix_csidtg_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_csidtg_zsl_preview.so \
     vendor/motorola/athene/proprietary/vendor/lib/libmmcamera_cac3_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_cac3_lib.so \
     vendor/motorola/athene/proprietary/vendor/lib/libmmcamera_dummyalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_dummyalgo.so \
@@ -417,8 +412,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/vendor/lib/libmmcamera_sw_tnr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sw_tnr.so \
     vendor/motorola/athene/proprietary/vendor/lib/libmmcamera_trueportrait_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_trueportrait_lib.so \
     vendor/motorola/athene/proprietary/vendor/lib/motcamera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/motcamera.device@1.0-impl.so \
-    vendor/motorola/athene/proprietary/vendor/lib/motorola.hardware.camera.device@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.camera.device@1.0_vendor.so \
-    vendor/motorola/athene/proprietary/vendor/lib/motorola.hardware.camera.provider@2.4_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.camera.provider@2.4_vendor.so \
     vendor/motorola/athene/proprietary/vendor/lib/libllvd_smore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvd_smore.so \
     vendor/motorola/athene/proprietary/vendor/lib/libllvd_sw_tnr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvd_sw_tnr.so \
     vendor/motorola/athene/proprietary/vendor/lib/libtrueportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrueportrait.so
@@ -771,27 +764,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     PowerOffAlarm
 
-# Motorola Power
-PRODUCT_COPY_FILES += \
-    vendor/motorola/athene/proprietary/lib/motorola.hardware.power@1.0.so:system/lib/motorola.hardware.power@1.0.so \
-    vendor/motorola/athene/proprietary/vendor/bin/hw/motorola.hardware.power@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motorola.hardware.power@1.0-service \
-    vendor/motorola/athene/proprietary/vendor/etc/init/motorola.hardware.power@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.power@1.0-service.rc \
-    vendor/motorola/athene/proprietary/vendor/lib/hw/motorola.hardware.power@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/motorola.hardware.power@1.0-impl.so \
-    vendor/motorola/athene/proprietary/vendor/lib/motorola.hardware.power@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.power@1.0_vendor.so
-
 # Motorola Display Panel
 PRODUCT_COPY_FILES += \
-    vendor/motorola/athene/proprietary/lib/com.motorola.hardware.display.panel@1.0.so:system/lib/com.motorola.hardware.display.panel@1.0.so \
-    vendor/motorola/athene/proprietary/vendor/bin/hw/com.motorola.hardware.display.panel@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/com.motorola.hardware.display.panel@1.0-service \
-    vendor/motorola/athene/proprietary/vendor/etc/init/com.motorola.hardware.display.panel@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.motorola.hardware.display.panel@1.0-service.rc \
-    vendor/motorola/athene/proprietary/vendor/lib/com.motorola.hardware.display.panel@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.motorola.hardware.display.panel@1.0_vendor.so \
-    vendor/motorola/athene/proprietary/vendor/lib/hw/com.motorola.hardware.display.panel@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.motorola.hardware.display.panel@1.0-impl.so \
     vendor/motorola/athene/proprietary/vendor/lib/hw/displaypanel.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/displaypanel.default.so
-
-# Motorola Audio Service
-PRODUCT_COPY_FILES += \
-    vendor/motorola/athene/proprietary/vendor/bin/hw/motorola.hardware.audio@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motorola.hardware.audio@2.0-service \
-    vendor/motorola/athene/proprietary/vendor/etc/init/motorola.hardware.audio@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.audio@2.0-service.rc
 
 # Perf - from: xiaomi/daisy/daisy_sprout:9/PKQ1.180917.001/V10.0.1.0.PDLMIFJ:user/release-keys
 PRODUCT_COPY_FILES += \

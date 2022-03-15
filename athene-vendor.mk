@@ -815,6 +815,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/vendor/lib/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtime_genoff.so \
     vendor/motorola/athene/proprietary/vendor/lib64/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtime_genoff.so
 
+# Athene Camera
+PRODUCT_COPY_FILES += \
+    vendor/motorola/athene/proprietary/vendor/lib/motorola.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.camera.device@1.0.so
+
 
 PRODUCT_PACKAGES += \
 	QPerformance \
